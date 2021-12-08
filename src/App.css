@@ -1,38 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
 .App {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: aliceblue;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container{
+  height: 550px;
+  background-image :linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.3))
+  , url('../src/Images/weatherPics.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 300px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+
+.navbar {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.navbar ul{
+  display: flex;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  padding: 1.3rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.banner p{
+  font-size: 12rem;
+  
+}
+
+.banner span{
+  font-size: 2rem;
+
+}
+
+.banner ul{
+  display: flex;
+
+}
+
+.banner ul li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  padding:0 .8rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+.footer p{
+  font-size: 8rem;
+  
+}
+
+
+input{
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  margin-top: 4vh;
+}
+
+.Fabars{
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.FaCloud{
+  font-size: 1.8rem;
+}
+
+form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h4{
+  font-weight: 200;
 }
