@@ -15,6 +15,7 @@
   width: 100vw;
   color: aliceblue;
   text-align: center;
+  
 }
 
 .App-container{
@@ -34,36 +35,60 @@
   padding: 10px 0;
 }
 
+.Search-container{
+  background-color: white;
+  color: rgb(31, 141, 231);
+  padding: 20px;
+  width: 250px;
+  z-index: 22222;
+  position: absolute;
+  top: 150px;
+  
+}
+
+.Search-container li{
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;   
   align-items: center;
-  
+  width:100%;
+  padding:0 20px;
 }
 
 .navbar ul{
   display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
 
+  
 }
 
 .navbar ul li{
   display: flex;
-  justify-content: space-between;
-  list-style: none;
-  text-decoration: none;
-  padding: 1.3rem;
-  font-weight: bold;
-  font-size: 1rem;
+  justify-content:space-between;   
+  align-items: center;
+
+}
+
+.navbarState{
+    margin-left: 90px;
 }
 
 .banner p{
-  font-size: 12rem;
+  font-size: 10rem;
   
 }
 
 .banner span{
-  font-size: 2rem;
+  font-size: 1rem;
 
 }
 
@@ -112,7 +137,9 @@ form{
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
+  
 }
 h4{
   font-weight: 200;
-}
+}          
