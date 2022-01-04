@@ -15,6 +15,7 @@
   width: 100vw;
   color: aliceblue;
   text-align: center;
+  
 }
 
 .App-container{
@@ -34,36 +35,61 @@
   padding: 10px 0;
 }
 
+.Search-container{
+  background-color: white;
+  color: rgb(31, 141, 231);
+  padding: 20px;
+  width: 250px;
+  z-index: 22222;
+  position: absolute;
+  top: 150px;
+  
+}
+
+.Search-container li{
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: center;   
   align-items: center;
-  
+  width:100%;
+  padding:0 .9px;
+  margin: 0 auto;
 }
 
 .navbar ul{
   display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: .9rem;
 
+  
 }
 
 .navbar ul li{
   display: flex;
-  justify-content: space-between;
-  list-style: none;
-  text-decoration: none;
-  padding: 1.3rem;
-  font-weight: bold;
-  font-size: 1rem;
+  justify-content: center;   
+  align-items: center;
+
+}
+
+.navbarState{
+  margin-left: 80px;
 }
 
 .banner p{
-  font-size: 12rem;
+  font-size: 10rem;
   
 }
 
 .banner span{
-  font-size: 2rem;
+  font-size: 1rem;
 
 }
 
@@ -112,7 +138,40 @@ form{
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
+  
 }
 h4{
   font-weight: 200;
+}
+
+.search-box {
+  width: 100%;
+ 
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
 }
